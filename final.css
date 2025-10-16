@@ -1,0 +1,103 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;s
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .section h1 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .section h2 {
+            color: #555;
+            font-size: 20px;
+        }
+        .image-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .location-overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .location-overlay p {
+            margin: 0;
+            font-weight: bold;
+        }
+        .location-overlay a {
+            color: #d9534f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .footer .column {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .footer .column h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .footer .column p, .footer .column a {
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer .social-icons img {
+            height: 24px;
+            margin: 0 5px;
+        }
+        .footer .logo-footer img {
+            height: 40px;
+        }
