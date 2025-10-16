@@ -1,6 +1,8 @@
 
 
 
+
+
 .barra {
 
 background-color: #CBD4B0;
@@ -80,6 +82,7 @@ text-decoration: none;
   gap: 0.4rem;
   backdrop-filter: blur(4px);
   transition: all 0.3s ease;
+  
 }
 
 .menu-boton:hover {
