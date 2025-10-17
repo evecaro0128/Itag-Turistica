@@ -135,44 +135,27 @@ font-family: "Nunito", sans-serif;
   color: #d6d6d6;
 }
 
-.deportivo h1 {
-
-text-align: center;
-font-family: "Inter", sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 90px;
-
-margin-bottom: 20px;
-
-}
-
-.centros {
-
-width: 1200px;
-
-
-}
-
-.deportivo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  height: 100vh;           
-  text-align: center;
-}
-
-.centros {
-  width: 80%;
-  max-width: 1200px;
-}
-
+/* estilos para sección de centros deportivos */
 .deportivo {
   background-color: #FDF9E5;
   padding: 60px 0;
-  border-bottom: black;
+  text-align: center;
 }
+
+.deportivo h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 64px; /* ajusta si quieres más grande */
+  margin-bottom: 30px;
+}
+
+/* contenedor centrado para el carrusel */
+.centros-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 
 .tarjeta {
 
