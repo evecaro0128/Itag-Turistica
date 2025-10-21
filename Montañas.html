@@ -2,33 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Itagüí Turística</title>
+  <title>Itagüí Turistica</title>
 
-  <!-- ICONOS Y BOOTSTRAP -->
+  <!-- Bootstrap y estilos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-
-  <!-- ESTILOS PROPIOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="centrodepoceeses.css" rel="stylesheet">
-
-  <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR SUPERIOR -->
+  <!-- Barra superior -->
   <nav class="navbar barra">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" href="#">
-        <img src="Sin título-1.svg" alt="logo" width="120">
+        <img src="Sin título-1.svg" alt="logo" width="120">
       </a>
     </div>
   </nav>
 
-  <!-- BOTÓN MENÚ LATERAL -->
+  <!-- Botón flotante del menú -->
   <button class="btn menu-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
     Menú
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -36,19 +40,19 @@
     </svg>
   </button>
 
-  <!-- MENÚ LATERAL -->
-  <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasRight">
+  <!-- Menú lateral -->
+  <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header titulo">
-      <h5 class="offcanvas-title">Menú</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
-    <!-- CULTURA -->
+    <!-- Opciones del menú -->
     <p class="d-inline-flex gap-1">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
-        <path d="M10 12.796V3.204L4.519 8z"/>
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
       </svg>
-      <a class="btn" data-bs-toggle="collapse" href="#collapseCultura" role="button" style="position: relative; left: 18rem;">Cultura</a>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseCultura" role="button" aria-expanded="false" aria-controls="collapseCultura" style="position: relative; left: 18rem;">Cultura</a>
     </p>
 
     <div class="collapse" id="collapseCultura">
@@ -58,27 +62,25 @@
       </div>
     </div>
 
-    <!-- SENDERISMO -->
     <p class="d-inline-flex gap-1">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
-        <path d="M10 12.796V3.204L4.519 8z"/>
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
       </svg>
-      <a class="btn" data-bs-toggle="collapse" href="#collapseSenderismo" role="button" style="position: relative; left: 16rem;">Senderismo</a>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseSenderismo" role="button" aria-expanded="false" aria-controls="collapseSenderismo" style="position: relative; left: 16rem;">Senderismo</a>
     </p>
 
     <div class="collapse" id="collapseSenderismo">
       <div class="card card-body opciones">
         <a href="#">Montañas</a>
-        <a href="#">Hábitats Naturales</a>
+        <a href="#">Habitats Naturales</a>
       </div>
     </div>
 
-    <!-- DEPORTE -->
     <p class="d-inline-flex gap-1">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
-        <path d="M10 12.796V3.204L4.519 8z"/>
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
       </svg>
-      <a class="btn" data-bs-toggle="collapse" href="#collapseDeporte" role="button" style="position: relative; left: 18rem;">Deporte</a>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseDeporte" role="button" aria-expanded="false" aria-controls="collapseDeporte" style="position: relative; left: 18rem;">Deporte</a>
     </p>
 
     <div class="collapse" id="collapseDeporte">
@@ -90,12 +92,12 @@
       </div>
     </div>
 
-    <!-- CONTACTO -->
+    
     <p class="d-inline-flex gap-1">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
-        <path d="M10 12.796V3.204L4.519 8z"/>
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
       </svg>
-      <a class="btn" data-bs-toggle="collapse" href="#collapseContacto" role="button" style="position: relative; left: 16rem;">Contáctanos</a>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto" style="position: relative; left: 16rem;">Contáctanos</a>
     </p>
 
     <div class="collapse" id="collapseContacto">
