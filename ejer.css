@@ -1,0 +1,103 @@
+.barra {
+
+background-color: #CBD4B0;
+
+
+}
+
+
+.menu {
+
+background-color: #FDF9E5;
+
+}
+
+.titulo {
+
+background-color: #CBD4B0;
+ margin-bottom: 10px;
+
+}
+
+.opciones {
+
+background-color: #CBD4B0;
+border: none;
+text-align: end;
+gap: 14px;
+
+
+
+}
+
+.opciones a {
+
+color: black;
+text-decoration: none;
+font-family: "Nunito", sans-serif;
+  font-style: italic;
+
+}
+
+.menu-container {
+  margin-top: 10px; 
+  text-align: right; /* alinea el botón a la derecha */
+  padding-right: 20px; /* un poco de espacio desde el borde derecho */
+}
+
+.menu-boton {
+  background-color: #CBD4B0;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.menu-boton {
+  
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  
+  padding: 10px 18px;
+  border-radius: 8px;
+  
+  align-items: center;
+  gap: 0.4rem;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  
+}
+
+
+.contenedor-texto {
+  width: 90%;           /* ocupa el 90% del ancho de la pantalla */
+  max-width: 800px;     /* pero no más de 800px */
+  margin: 40px auto;    /* centra el bloque en la página */
+  text-align: left;     /* todo el contenido a la izquierda */
+}
+
+.contenedor-texto .texto {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.contenedor-texto .descripcion {
+  font-size: 1rem;
+  line-height: 1.6;
+  
+}
+
+
+
+.contenedor-texto h5 {
+
+background-color: #CBD4B0;
+padding: 8px;
+
+}
+
