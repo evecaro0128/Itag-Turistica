@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Itagüí Turistica</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Eventos Deportivos</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="lindo.css" rel="stylesheet">
+    <link href="Event.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <body>
     
-   <nav class="navbar barra">
+<nav class="navbar barra">
   <div class="container-fluid">
     <a class="navbar-brand ms-3" href="#">
       <img src="Sin título-1.svg" alt="logo" width="120">
@@ -24,24 +24,19 @@
   </div>
 </nav>
 
-<div class="manzanillo">
-<img src="P1120407_2.jpg" alt="manzanillo">
-<button class="btn menu-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-  Menú
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-  </svg>
-</button>
 
-<div class="cerro">
-<h1>Sendero</h1>
-<h5>Cerro Manzanillo</h5>
-<a href="#">Conoce su ubicación</a>
+<!--Menu-->
+<div class="menu-container text-end">
+  <button class="btn menu-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    Menú
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
 </div>
 
-</div>
 
-<!--Menú-->
+
 <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header titulo">
     <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
@@ -111,87 +106,85 @@ Deporte</a>
   </div>
 </div>
 </div>
-<!--Fin-->
 
-<!--fotos-->
-<section class="deportivo">
-  <h1>Centros Deportivos</h1>
+<!--Final menu-->
 
-  <div class="centros-wrapper">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-      </div>
+<div class="titulos">
+<h1>Eventos Deportivos</h1>
+<h4>Eventos deportivos cercanos</h4>
+</div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="ditaires.jpg" class="d-block w-100" alt="cubo" style="height:500px; object-fit:cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <a href="#"><h5>Polideportivo <br> "El Cubo"</h5></a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="poli.jpeg" class="d-block w-100" alt="poli" style="height:500px; object-fit:cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <a href="#"><h5>Polideportivo <br> Oscar Lopez Escobar</h5></a>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!--cartas-->
-
-<div class="container text-center my-5 carta">
-  <div class="row justify-content-center">
+<!--Evento-->
+<div class="card mb-3 carta">
+  <div class="row g-0 ">
     <div class="col-md-4">
-      <div class="card tarjeta">
-        <img src="eventos.png" class="card-img-top" alt="eventos">
-        <div class="card-body">
-          <h5 class="card-title">Eventos Deportivos</h5>
-          <p class="card-text">Calendario de eventos deportivos cercanos</p>
-          <a href="Eventos deportivos.html" class="btn btn-primary">Ver más</a>
-        </div>
-      </div>
+      <img src="art_9751.jpg" class="img-fluid rounded-start" alt="baby">
     </div>
-
-    <div class="col-md-4">
-      <div class="card tarjeta">
-        <img src="Rectangle.png" class="card-img-top" alt="poli">
-        <div class="card-body">
-          <h5 class="card-title">Centros Deportivos</h5>
-          <p class="card-text">Centros deportivos gratuitos de Itagüí</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card tarjeta">
-        <img src="inscrip.png" class="card-img-top" alt="ditaires">
-        <div class="card-body">
-          <h5 class="card-title">Inscripciones Deportivas</h5>
-          <p class="card-text">Ficha con el deporte, horario y contacto del centro</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
-        </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h5 class="card-title">Zona Municipal de Baby Futbol</h5>
+        <p>La zona municipal de baby fútbol de Itagüí se realiza anualmente y es organizada por la Alcaldía y el Instituto de Cultura, Recreación y Deporte del municipio.</p>
+       <p class="card-text"><i class="bi bi-geo-alt-fill"></i>  Diferentes escenarios</p>
+       <p class="card-text"><i class="bi bi-calendar-week"></i>   8 de Junio</p>
+        <a href="https://festivaldefestivales.com/wp-content/uploads/2023/02/Convocatoria-Def-Babyfutbol-Colanta-2023-2024.pdf">Conoce más información</a>
       </div>
     </div>
   </div>
 </div>
 
+
+<div class="card mb-3 carta">
+  <div class="row g-0 ">
+    <div class="col-md-4">
+      <img src="inter.jpeg" class="img-fluid rounded-start" alt="intercol">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h5 class="card-title">Juegos Intescolegiados</h5>
+        <p>Los Juegos Intercolegiados de Itagüí son una competencia deportiva para estudiantes que se desarrolla anualmente en varias fases, incluyendo un zonal municipal y competencias departamentales.</p>
+       <p class="card-text"><i class="bi bi-geo-alt-fill"></i>  Diferentes escenarios</p>
+       <p class="card-text"><i class="bi bi-calendar-week"></i>     3 de Septiembre</p>
+        <a href="https://www.juegosintercolegiados.gov.co/juegos-intercolegiados-nacionales-2025">Conoce más información</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 carta">
+  <div class="row g-0 ">
+    <div class="col-md-4">
+      <img src="inter.jpeg" class="img-fluid rounded-start" alt="intercol">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h5 class="card-title">Juegos Intescolegiados</h5>
+        <p>Los Juegos Intercolegiados de Itagüí son una competencia deportiva para estudiantes que se desarrolla anualmente en varias fases, incluyendo un zonal municipal y competencias departamentales.</p>
+       <p class="card-text"><i class="bi bi-geo-alt-fill"></i>  Diferentes escenarios</p>
+       <p class="card-text"><i class="bi bi-calendar-week"></i>     3 de Septiembre</p>
+        <a href="#">Conoce más información</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 carta">
+  <div class="row g-0 ">
+    <div class="col-md-4">
+      <img src="inter.jpeg" class="img-fluid rounded-start" alt="intercol">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h5 class="card-title">Juegos Intescolegiados</h5>
+        <p>Los Juegos Intercolegiados de Itagüí son una competencia deportiva para estudiantes que se desarrolla anualmente en varias fases, incluyendo un zonal municipal y competencias departamentales.</p>
+       <p class="card-text"><i class="bi bi-geo-alt-fill"></i>  Diferentes escenarios</p>
+       <p class="card-text"><i class="bi bi-calendar-week"></i>     3 de Septiembre</p>
+        <a href="#">Conoce más información</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Fin-->
 
 <footer>
     <div>
@@ -230,7 +223,24 @@ Deporte</a>
 
 
 
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
 </body>
 </html>
