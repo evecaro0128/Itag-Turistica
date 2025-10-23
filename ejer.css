@@ -72,6 +72,12 @@ font-family: "Nunito", sans-serif;
   
 }
 
+.texto {
+
+font-size: 70px;
+
+}
+
 
 .contenedor-texto {
   width: 90%;           /* ocupa el 90% del ancho de la pantalla */
@@ -80,10 +86,10 @@ font-family: "Nunito", sans-serif;
   text-align: left;     /* todo el contenido a la izquierda */
 }
 
-.contenedor-texto .texto {
+.contenedor-texto  {
   margin-bottom: 10px;
-  font-weight: 800;
-  font-size: 1.8rem;
+  
+  font-size: 20px;
 }
 
 .contenedor-texto .descripcion {
@@ -101,3 +107,17 @@ padding: 8px;
 
 }
 
+.contenedor-texto h2 {
+
+font-size: 35px;
+color: #E00008;
+
+}
+
+.contenedor-texto li {
+
+margin-bottom: 20px;
+margin-top: 25px;
+
+
+}
