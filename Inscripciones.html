@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Inscipciones Deportivas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="inscrip.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar barra">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-3" href="#">
+      <img src="Sin título-1.svg" alt="logo" width="120">
+    </a>
+  </div>
+</nav>
+
+<div class="menu-container text-end">
+  <button class="btn menu-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    Menú
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header titulo">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+ 
+  <p class="d-inline-flex gap-1">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+</svg>
+      
+      <a class="btn" data-bs-toggle="collapse" href="#collapseCultura" role="button" aria-expanded="false" aria-controls="collapseCultura" style="position: relative; left: 18rem;">
+  Cultura
+</a>
+<div class="collapse" id="collapseCultura">
+  <div class="card card-body opciones">
+    <a href="#">Museos</a>
+    <a href="#">Ferias</a>
+  </div>
+</div>
+
+
+<p class="d-inline-flex gap-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+</svg>
+
+  <a class="btn" data-bs-toggle="collapse" href="#collapseSenderismo" role="button" aria-expanded="false" aria-controls="collapseSenderismo" style="position: relative; left: 16rem;">
+  Senderismo
+</a>
+<div class="collapse" id="collapseSenderismo">
+  <div class="card card-body opciones">
+    <a href="#">Montañas</a>
+    <a href="#">Habitats Naturales</a>
+  </div>
+</div>
+
+<p class="d-inline-flex gap-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+</svg>
+
+  <a class="btn" data-bs-toggle="collapse" href="#collapseDeporte" role="button" aria-expanded="false" aria-controls="collapseDeporte" style="position: relative; left: 18rem;">
+Deporte</a>
+<div class="collapse" id="collapseDeporte">
+  <div class="card card-body opciones">
+    <a href="#">Ejercicio</a>
+    <a href="#">Inscripciones</a>
+    <a href="Eventos deportivos.html">Eventos Deportivos</a>
+    <a href="#">Centros Deportivos</a>
+  </div>
+</div>
+
+<p class="d-inline-flex gap-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+  <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+</svg>
+
+  <a class="btn" data-bs-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto" style="position: relative; left: 16rem;">
+  Contáctanos
+</a>
+<div class="collapse" id="collapseContacto">
+  <div class="card card-body opciones">
+    <a href="#">Redes Sociales</a>
+    <a href="#">Soporte</a>
+  </div>
+</div>
+</div>
+
+<h1>Inscripciones Deportivas</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
+</body>
+</html>
