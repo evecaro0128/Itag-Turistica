@@ -89,7 +89,7 @@ font-size: 70px;
 .contenedor-texto  {
   margin-bottom: 10px;
   
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .contenedor-texto .descripcion {
@@ -104,6 +104,8 @@ font-size: 70px;
 
 background-color: #CBD4B0;
 padding: 8px;
+margin-top: 30px;
+font-size: 25px;
 
 }
 
@@ -120,4 +122,74 @@ margin-bottom: 20px;
 margin-top: 25px;
 
 
+}
+
+footer {
+      background-color: #c9cfad; 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 85px 50px;
+      font-family: "Poppins", sans-serif;
+      flex-wrap: wrap;
+      margin-top: 70px;
+    }
+
+    footer div {
+      text-align: center;
+    }
+
+    footer h3 {
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 30px;
+    }
+
+    footer p {
+      margin: 3px 0;
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+
+    .logo img {
+      width: 200px;
+    }
+
+    .logo h2 {
+      font-weight: 700;
+      color: #1c1c1c;
+    }
+
+    .verde {
+      color: #4b7340;
+    }
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .centros-deportivos h1 {
+    font-size: 2.2rem;
+  }
+
+  .centro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .centro .info {
+    width: 100%;
+    order: 2;
+  }
+
+  .centro .texto {
+    order: 1;
+  }
 }
