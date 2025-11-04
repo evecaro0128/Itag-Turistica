@@ -140,6 +140,89 @@ html, body {
   margin-bottom: 10px;
 }
 
+/* SECCIÓN DE INSCRIPCIONES DEPORTIVAS */
+
+.inscripciones {
+  padding: 60px 5%;
+  background-color: #FDF9E5;
+  font-family: "Nunito", sans-serif;
+  color: #1E1E1E;
+}
+
+.inscripciones h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.inscripciones h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.deportes-lista {
+  background-color: #d9d9d9;
+  padding: 25px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+.deportes-lista ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.deportes-lista li {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+.inscripcion-info p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.info-box {
+  background-color: #dfe5c1;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.info-box p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-box i {
+  font-size: 1.4rem;
+  color: #3B4A1F;
+}
+
+.btn-horarios {
+  background-color: #c7332c;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-horarios:hover {
+  background-color: #a92924;
+}
+
+
 footer {
       background-color: #c9cfad; 
       display: flex;
