@@ -403,7 +403,12 @@ color: #fdd663;
 }
 
 
-
+.card-body img {
+  width: 120px;        /* tamaño fijo */
+  height: 120px;       /* lo vuelve cuadrado */
+  object-fit: cover;   /* recorta sin deformar */
+  border-radius: 50%;  /* círculo perfecto */
+}
 
 
 
