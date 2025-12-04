@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Itagüí Turistica</title>
+
+  <!-- Bootstrap y estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="centrodepoceeses.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+</head>
+
+<body>
+
+    <!-- Barra superior -->
+  <nav class="navbar barra">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="Principal.html">
+        <img src="Sin título-1.svg" alt="logo" width="120">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Botón flotante del menú -->
+  <button class="btn menu-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    Menú
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
+
+  <!-- Menú lateral -->
+  <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header titulo">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Opciones del menú -->
+    <p class="d-inline-flex gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+      </svg>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseCultura" role="button" aria-expanded="false" aria-controls="collapseCultura" style="position: relative; left: 18rem;">Cultura</a>
+    </p>
+
+    <div class="collapse" id="collapseCultura">
+      <div class="card card-body opciones">
+        <a href="Museos.html">Museos</a>
+        <a href="Ferias.html">Ferias</a>
+      </div>
+    </div>
+
+    <p class="d-inline-flex gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+      </svg>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseSenderismo" role="button" aria-expanded="false" aria-controls="collapseSenderismo" style="position: relative; left: 16rem;">Senderismo</a>
+    </p>
+
+    <div class="collapse" id="collapseSenderismo">
+      <div class="card card-body opciones">
+        <a href="Montañas.html">Montañas</a>
+        <a href="Habitats Naturales.html">Habitats Naturales</a>
+      </div>
+    </div>
+
+    <p class="d-inline-flex gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+      </svg>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseDeporte" role="button" aria-expanded="false" aria-controls="collapseDeporte" style="position: relative; left: 18rem;">Deporte</a>
+    </p>
+
+    <div class="collapse" id="collapseDeporte">
+      <div class="card card-body opciones">
+        <a href="Ejercicio.html">Ejercicio</a>
+        <a href="Inscripciones.html">Inscripciones</a>
+        <a href="Eventos deportivos.html">Eventos Deportivos</a>
+        <a href="centrodepo.html">Centros Deportivos</a>
+      </div>
+    </div>
+
+    <p class="d-inline-flex gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16" style="position: relative; left: 15rem;">
+        <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+      </svg>
+      <a class="btn" data-bs-toggle="collapse" href="#collapseContacto" role="button" aria-expanded="false" aria-controls="collapseContacto" style="position: relative; left: 16rem;">Contáctanos</a>
+    </p>
+
+    <div class="collapse" id="collapseContacto">
+      <div class="card card-body opciones">
+        <a href="#">Redes Sociales</a>
+        <a href="soporte.html">Soporte</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Formulario-->
+<div class="container mt-5 mb-5" style="max-width: 700px;">
+  <h2 class="text-center mb-4" style="font-weight: 800; color:#3B4A1F;">Centro de Soporte</h2>
+
+  <form>
+
+    <div class="mb-3">
+      <label class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" placeholder="Ingresa tu nombre" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" placeholder="ejemplo@correo.com" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Tipo de solicitud</label>
+      <select class="form-select" required>
+        <option value="">Selecciona una opción</option>
+        <option value="error">Error en la página</option>
+        <option value="informacion">Solicitud de información</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="otro">Otro</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Mensaje</label>
+      <textarea class="form-control" rows="5" placeholder="Describe tu solicitud o problema..." required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Adjuntar captura (opcional)</label>
+      <input type="file" class="form-control" accept="image/*">
+    </div>
+
+    <button type="submit" class="btn btn-success w-100" style="background-color:#3B4A1F; border:none; font-weight:700;">
+      Enviar solicitud
+    </button>
+
+  </form>
+</div>
+
+
+<!--Footer-->
+   <footer>
+    <div>
+      <h3>Créditos</h3>
+      <p>Evelyn Caro Restrepo</p>
+      <p>Santiago Uribe</p>
+      <p>Yojan Martínez</p>
+    </div>
+
+    <div>
+      <h3>Contacto</h3>
+      <p>3148039633</p>
+    </div>
+
+    <div>
+      <h3>Redes sociales</h3>
+      <div class="social">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+        <p>@jjk_ecr</p>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="Sin título-1.svg" alt="Logo Caminar Verde">
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
