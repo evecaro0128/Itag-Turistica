@@ -18,6 +18,9 @@
   <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
@@ -27,7 +30,7 @@
   <nav class="navbar barra">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" href="principal.html">
-        <img src="Sin título-1.svg" alt="logo" width="120">
+        <img src="sin_título-1.svg" alt="logo" width="120">
       </a>
     </div>
   </nav>
@@ -71,7 +74,7 @@
 
     <div class="collapse" id="collapseSenderismo">
       <div class="card card-body opciones">
-        <a href="montañas.html">Montañas</a>
+        <a href="montanas.html">Montañas</a>
         <a href="habitads.html">Habitats Naturales</a>
       </div>
     </div>
@@ -147,6 +150,44 @@
     </div>
   </section>
 
+
+ <!--Mapa-->
+
+ <section class="mapa-section">
+    <h2 style="text-align:center; color:#344422; margin-bottom: 20px;">Mapa de Centros Deportivos</h2>
+    <div id="map"></div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+  <script>
+    // Inicializa el mapa centrado en Itagüí
+    var map = L.map('map').setView([6.182465, -75.628123], 14);
+
+    // Capa base (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // 📍 Coliseo Ditaires
+    L.marker([6.167420, -75.628153])
+      .addTo(map)
+      .bindPopup("<b>Humedal Ditaires</b><br>Itagüí, Antioquia");
+
+   
+
+    // 📍 Polideportivo Óscar López Escobar
+    L.marker([6.191743, -75.627246])
+      .addTo(map)
+      .bindPopup("<b>Corredor Biologico</b><br>Itagüí, Antioquia");
+  </script>
+
+
+
+
    <footer>
     <div>
       <h3>Créditos</h3>
@@ -171,7 +212,7 @@
     </div>
 
     <div class="logo">
-      <img src="Sin título-1.svg" alt="Logo Caminar Verde">
+      <img src="sin_título-1.svg" alt="Logo Caminar Verde">
     </div>
   </footer>
 
